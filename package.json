@@ -2,7 +2,7 @@
   "name": "is-where",
   "sideEffects": false,
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS environment check functions like `isWebkit() isSafari() isBrowser() isNode()` etc. A simple & small integration.",
   "module": "./dist/index.es.js",
   "main": "./dist/index.cjs",
