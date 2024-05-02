@@ -38,7 +38,7 @@ export function isJsDom() {
  * returns `true` if the current environment is Deno
  */
 export function isDeno() {
-  // @ts-ignore
+  // @ts-expect-error Deno types not found
   return typeof Deno !== 'undefined' && typeof Deno.core !== 'undefined'
 }
 
