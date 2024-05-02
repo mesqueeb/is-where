@@ -41,6 +41,10 @@ isWebKit() // true / false
 
 ### List of functions
 
+Features
+
+- `isTouchSupported()`
+
 Environments
 
 - `isNode()`
