@@ -1,4 +1,9 @@
 /**
+ * returns `true` if the current environment supports touch events
+ * @see https://stackoverflow.com/a/63666289/2697506
+ */
+export declare function isTouchSupported(): boolean;
+/**
  * returns `true` if the current environment is Node
  */
 export declare function isNode(): boolean;

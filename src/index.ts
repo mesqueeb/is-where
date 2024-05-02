@@ -1,4 +1,12 @@
 /**
+ * returns `true` if the current environment supports touch events
+ * @see https://stackoverflow.com/a/63666289/2697506
+ */
+export function isTouchSupported() {
+  return isBrowser() && matchMedia('(hover: none)').matches
+}
+
+/**
  * returns `true` if the current environment is Node
  */
 export function isNode() {
