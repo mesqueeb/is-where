@@ -4,7 +4,10 @@
   "type": "module",
   "version": "2.0.0",
   "description": "JS environment check functions like `isWebkit() isSafari() isBrowser() isNode()` etc. A simple & small integration.",
-  "exports": "./index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*"
+  },
   "files": [
     "dist"
   ],
