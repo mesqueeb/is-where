@@ -1,6 +1,6 @@
 {
   "name": "is-where",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "JS environment check functions like `isWebkit() isSafari() isBrowser() isNode()` etc. A simple & small integration.",
   "type": "module",
   "sideEffects": false,
