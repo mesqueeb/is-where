@@ -1,9 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable tree-shaking/no-side-effects-in-initialization */
-/* eslint-disable @typescript-eslint/no-array-constructor */
-import { test, expect } from 'vitest'
+import { expect, test } from 'vitest'
 
-import { isNode, isBrowser, isWebWorker, isJsDom, isDeno, isWebKit, isSafari } from '../src/index'
+import { isBrowser, isDeno, isJsDom, isNode, isSafari, isWebKit, isWebWorker } from '../src/index'
 
 test('Node tests', () => {
   expect(isNode()).toEqual(true)

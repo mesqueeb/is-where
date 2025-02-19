@@ -3,22 +3,22 @@
  *
  * @see https://stackoverflow.com/a/63666289/2697506
  */
-export function isTouchSupported() {
+export function isTouchSupported(): boolean {
   return isBrowser() && window.matchMedia('(hover: none)').matches
 }
 
 /** Returns `true` if the current environment is Node */
-export function isNode() {
+export function isNode(): boolean {
   return typeof process !== 'undefined' && process.versions != null && process.versions.node != null
 }
 
 /** Returns `true` if the current environment is a browser */
-export function isBrowser() {
+export function isBrowser(): boolean {
   return typeof window !== 'undefined' && typeof window.document !== 'undefined'
 }
 
 /** Returns `true` if the current environment is a Web Worker */
-export function isWebWorker() {
+export function isWebWorker(): boolean {
   return (
     typeof self === 'object' &&
     self.constructor &&
@@ -27,7 +27,7 @@ export function isWebWorker() {
 }
 
 /** Returns `true` if the current environment is JS DOM */
-export function isJsDom() {
+export function isJsDom(): boolean {
   return (
     (typeof window !== 'undefined' && window.name === 'nodejs') ||
     (typeof navigator !== 'undefined' &&
@@ -36,7 +36,7 @@ export function isJsDom() {
 }
 
 /** Returns `true` if the current environment is Deno */
-export function isDeno() {
+export function isDeno(): boolean {
   // @ts-expect-error Deno types not found
   return typeof Deno !== 'undefined' && typeof Deno.core !== 'undefined'
 }
@@ -54,7 +54,7 @@ export function isDeno() {
  *
  * All mobile browsers on iOS & iPadOS use WebKit
  */
-export function isWebKit() {
+export function isWebKit(): boolean {
   return (
     isBrowser() &&
     !!navigator.vendor &&
