@@ -28,8 +28,10 @@ export function isWebWorker(): boolean {
 
 /** Returns `true` if the current environment is JS DOM */
 export function isJsDom(): boolean {
+  // Node 21+ ships a global `navigator` whose userAgent contains "Node.js", so `window` must exist too
+  if (typeof window === 'undefined') return false
   return (
-    (typeof window !== 'undefined' && window.name === 'nodejs') ||
+    window.name === 'nodejs' ||
     (typeof navigator !== 'undefined' &&
       (navigator.userAgent.includes('Node.js') || navigator.userAgent.includes('jsdom')))
   )
