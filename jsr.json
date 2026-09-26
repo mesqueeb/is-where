@@ -1,8 +1,13 @@
 {
   "name": "@mesqueeb/is-where",
   "version": "2.0.7",
+  "license": "MIT",
   "exports": "./src/index.ts",
   "publish": {
-    "include": ["src/**", "README.md", "LICENSE"]
+    "include": [
+      "src/**",
+      "README.md",
+      "LICENSE"
+    ]
   }
 }
